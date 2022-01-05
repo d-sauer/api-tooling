@@ -1,0 +1,2 @@
+source "/opt/api/complete"
+complete -F _bash_cli api

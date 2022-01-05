@@ -1,0 +1,55 @@
+#!/usr/bin/env variant
+
+tasks:
+  init:
+    description: "Initialise new project"
+    tasks:
+      openapi:
+        description: "Initialise empty OpenAPI specification project."
+        script: |
+          echo "Initialise OpenAPI project"
+          echo "TODO: Implement logic to create project from template"
+      import-openapi:
+        description: "Initialise OpenAPI specification project from existing specification"
+        script: |
+          echo "Not implemented"
+      asyncapi:
+        description: "Initialise empty AsyncAPI specification project."
+        script: |
+          echo "Not implemented"
+  generate:
+    description: "Generate different artifacts from your project"
+    tasks:
+      openapi-doc:
+        description: "Generate API documentation from OpenAPI specification and Markdown"
+        script: |
+          echo "Not implemented"
+      openapi-prism-mock:
+        description: "Generate Stoplight Prism Mock from OpenAPI specification"
+        script: |
+          echo "Not implemented"
+      openapi-postman:
+        description: "Generate Postman collection from OpenAPI specification"
+        script: |
+          echo "Not implemented"
+      openapi-jmeter:
+        description: "Generate JMeter project from OpenAPI specification"
+        script: |
+          echo "Not implemented"
+      openapi3-to-openapi2:
+        description: "Convert OpenAPI v3 into OpenAPI v3 (a.k.a. Swagger)"
+        script: |
+          echo "Not implemented"
+  lint:
+    description: "Lint analysis of your project"
+    tasks:
+      openapi:
+        description: "Execute Stoplight Spectral lint rules"
+        script: |
+          echo "Not implemented"
+      security:
+        description: "Execute security lint using 42Crunch"
+        script: |
+          echo "Not implemented"
+
+
