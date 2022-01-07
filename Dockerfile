@@ -58,7 +58,8 @@ VOLUME ["/opt/workspace"]
 # Change to non-root user
 # Install zsh for the user
 USER dev
-RUN wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh || true
+RUN wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh || true \
+    && git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 COPY config/user/ /home/dev/
 
 

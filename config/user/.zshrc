@@ -77,6 +77,7 @@ plugins=(
   cp
   aws
   golang
+  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
