@@ -4,6 +4,7 @@ local-build:
 	docker build -f Dockerfile -t dsauer/api-tooling:latest .
 
 local-dev:
+	mkdir out
 	docker run --rm -it \
 		-v $(PWD)/out:/opt/workspace \
 		-v $(PWD)/tooling:/opt/tooling \
